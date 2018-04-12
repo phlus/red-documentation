@@ -1,0 +1,129 @@
+html {
+font-family;
+/* 1 */
+-ms-text-size-adjust: 100%;
+/* 2 */
+-webkit-text-size-adjust: 100%;
+/* 2 */ }
+
+/**
+* Remove default margin.
+*/
+body {
+margin: 0; }
+
+body::-webkit-scrollbar{
+display: none;
+}
+   
+body, html{
+font-family: 'Roboto', sans-serif;
+z-index: 1;
+margin: 0px;
+height: 100%;
+width: 100%;
+}
+
+body.dark {
+
+background-color: #41424e;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ec7a5c' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+#text-root{
+z-index: 9999;
+}
+.start-selling-wrapper {
+content: '';
+position: absolute;
+border-radius: 50%;
+width: 150px;
+height: 150px;
+margin: 0;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+margin: 0 auto;
+animation: cd-pulse 2s infinite;
+}
+
+@keyframes cd-pulse
+{
+0%  {box-shadow:0 0 0 0 #ec7a5c}
+100%{box-shadow:0 0 0 50px rgba(255,150,44,0)}
+}
+
+
+h4{
+font-size: 1.5rem;
+font-weight: normal;
+}
+
+.start-selling-sq{
+position: absolute;
+display: block;
+width: 150px;
+height: 150px;
+transform: translateY(-50%);
+top: 50%;
+margin: 0 auto;
+border-radius: 50%;
+background: #ec7a5c;
+-webkit-transition: background-color 0.2s;
+-moz-transition: background-color 0.2s;
+-o-transition: background-color 0.2s;
+transition: background-color 0.2s;
+}
+
+.start-selling-sq .support-text{
+position: absolute;
+width: 100%;
+top: 50%;
+transform: translateY(-50%);
+color: #fff;
+text-align: center;
+line-height: .2rem;
+}
+
+i.arrow{
+position: absolute;
+font-size: 48px;
+bottom: 0px;
+right: 20%;
+color: #fff;
+transform: rotate(30deg);
+}
+
+
+
+.home-center-text {
+top: 30%;
+transform: translateY(-50%);
+color: #fff;
+text-align: center;
+line-height: .2rem;
+position: absolute;
+z-index: 10;
+background-color: #ec7a5c;
+width: 150px;
+height: 150px;
+text-align: center;
+border-radius: 50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 14px;
+font-weight: 400;
+font-family: sans-serif, Helvetica Neue, Helvetica, Arial ;
+-webkit-font-smoothing: subpixel-antialiased
+}
+
+
+.authPage {
+position: relative;
+min-height: 700px
+}
+
+
+
